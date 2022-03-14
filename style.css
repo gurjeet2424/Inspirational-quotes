@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=PT+Sans&family=Sansita+Swashed:wght@300&family=Zen+Maru+Gothic:wght@300&display=swap');
+html{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    display: flex;
+    min-height:80vh;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    background-color: #fbf3d3;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%2384d78f' fill-opacity='0.45'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family:"PT Sans", sans-serif;
+    font-weight:700;
+    color:#000;
+}
+.quoteContainer{
+    width:auto;
+    max-width:900px;
+    border-radius:30px;
+    padding:30px 40px 30px 40px;
+    background-color:rgb(222, 250, 240);
+    box-shadow:0 10px 10px 0;
+}
+.quoteText{
+    font-size:2rem;
+}
+.longQuote{
+    font-size:1.5rem;
+}
+.authorText{
+    margin-top:30px;
+    font-size:1.7rem;
+    font-weight:600;
+    font-style:italic;
+}
+.buttonContainer{
+    margin-top:20px;
+    display:flex;
+    justify-content: space-between;
+}
+button{
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:500;
+    height:2.5rem;
+    border:0;
+    border-radius:10px;
+    color:#333;
+    background-color:rgb(211, 145, 46);
+    outline:none;
+    padding:0.5rem 1.8rem;
+}
+button:hover{
+    filter:brightness(120%);
+}
+button:active{
+    transform:translate(1.0);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+.twitterBtn:hover{
+    color:#38a1f3;
+}
+.loader {
+    position:absolute;
+    border: 16px solid #e7f7f0;
+    border-top: 16px solid #333;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/* Media query: Tablet/Small Screen */
+@media screen and (max-width=1000px){
+    .quoteContainer{
+        margin:auto 10px;
+    }
+    .quoteText{
+        font-size:1.2rem;
+    }
+
+}
